@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_cart">
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="be.kuleuven.scanner.menu.ui.login.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/nav_signin"
+        android:name="be.kuleuven.scanner.menu.ui.Signin.SignInFragment"
+        android:label="@string/menu_signin"
+        tools:layout="@layout/fragment_sign_in" />
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="be.kuleuven.scanner.menu.ui.cart.CartFragment"
+        android:label="@string/menu_cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/nav_scan"
+        android:name="be.kuleuven.scanner.menu.ui.scan.ScanFragment"
+        android:label="@string/menu_scan"
+        tools:layout="@layout/fragment_scan" />
+
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="be.kuleuven.scanner.menu.ui.login.LoginFragment"
+        android:label="Logout"
+        tools:layout="@layout/fragment_login" />
+</navigation>
